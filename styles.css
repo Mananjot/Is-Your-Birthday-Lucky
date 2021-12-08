@@ -1,0 +1,63 @@
+:root{
+    --primary-color: rgb(70, 138, 138);
+    --secondary-color: rgb(59, 214, 214);
+    --white: white;
+    --radius: 5px;
+    --margin: 10px;
+    --input-padding: 5px;
+    --input-margin: 10px;
+}
+
+body{
+    background-color: var(--primary-color);
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: var(--white);
+}
+
+label{
+    font-size: 1.2rem;
+}
+
+input, label{
+    display: block;
+    margin: var(--input-margin) auto;
+}
+
+input{
+    width: 30%;
+    padding:var(--input-padding);
+    box-sizing: border-box;
+    border: none;
+    border-radius: var(--radius);
+}
+
+input:focus{
+    outline-color: var(--secondary-color);
+}
+
+button{
+    width: 20%;
+    margin: var(--input-margin);
+    padding: var(--input-padding);
+    background-color: transparent;
+    color: var(--white);
+    font-size: 1.2rem;
+    border: 1.5px solid var(--secondary-color);
+    border-radius: var(--radius);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:var(--secondary-color);
+}
+
+span{
+    display: block;
+    margin: var(--input-margin);
+    font-size: 1.5rem;
+}
